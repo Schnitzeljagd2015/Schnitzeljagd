@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_game_station"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/round_background"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="de.htwberlin.f4.tms.schnitzeljagd.view.GameStationActivity">
+    
+    <TextView
+        android:id="@+id/questionNumberTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/round_background"
+        android:hint="00"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#ff000000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/questionTextView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="400dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@+id/infoImageView"
+        android:layout_toRightOf="@+id/questionNumberTextView"
+        android:hint="question"
+        android:minLines="2"
+        android:textColor="#ff000000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/infoImageView"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:clickable="true"
+        android:onClick="onInfoImageViewClick"
+        android:src="@drawable/icon_info" />
+
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/answerEditText"
+        android:layout_alignEnd="@+id/infoImageView"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/infoImageView"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="40dp" />
+
+    <EditText
+        android:id="@+id/answerEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/okButton"
+        android:layout_marginBottom="10dp"
+        android:editable="true"
+        android:hint="Deine Antwort..."
+        android:minLines="2"
+        android:onClick="onEditTextChanged"
+        android:singleLine="false"
+        android:textColor="#ff000000"
+        android:textCursorDrawable="@drawable/color_cursor" />
+
+    <Button
+        android:id="@+id/mainMenuButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginRight="10dp"
+        android:onClick="onMainMenuButtonClick"
+        android:text="Hauptmenü"
+        android:textSize="14dp" />
+
+    <Button
+        android:id="@+id/okButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/mainMenuButton"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/mainMenuButton"
+        android:onClick="onOKButtonClick"
+        android:text="Abschicken"
+        android:textSize="16dp" />
+
+</RelativeLayout>

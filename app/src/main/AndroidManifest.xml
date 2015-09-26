@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="de.htwberlin.f4.tms.schnitzeljagd">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but are recommended. -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:name=".core.ApplicationController"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".view.MainActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- TODO Configure your google api key (https://console.developers.google.com) -->
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="paste your google api key here" />
+        <!-- Edit end -->
+
+        <activity
+            android:name=".view.SelectGameRoutesActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_select_game_routes" />
+        <activity
+            android:name=".view.GameStationActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_game_station" />
+        <activity
+            android:name=".view.ManageGameRoutesActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_manage_game_routes" />
+        <activity
+            android:name=".view.CreateGameRouteActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_create_game_route" />
+    </application>
+</manifest>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Schnitzeljagd</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_select_game_routes">SelectGameRoutesActivity</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_game_station">GameStationActivity</string>
+    <string name="title_activity_manage_game_routes">ManageGameRoutesActivity</string>
+    <string name="title_activity_create_game_route">CreateGameRouteActivity</string>
+</resources>

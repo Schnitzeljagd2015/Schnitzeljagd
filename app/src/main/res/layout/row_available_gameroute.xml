@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/row_available_gameroute"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/gameRouteFileNameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="false"
+        android:layout_toStartOf="@+id/gameRouteStatusImageView"
+        android:layout_weight=".70"
+        android:autoText="false"
+        android:background="@drawable/bg_key"
+        android:hint="gameRouteFileNameTextView"
+        android:paddingLeft="3dp"
+        android:paddingTop="4dp"
+        android:textSize="25sp" />
+
+    <ImageView
+        android:id="@+id/gameRouteStatusImageView"
+        android:layout_width="70dp"
+        android:layout_height="fill_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_weight=".30"
+        android:paddingTop="9dp" />
+
+</RelativeLayout>
