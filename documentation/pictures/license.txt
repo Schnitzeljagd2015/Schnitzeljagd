@@ -1,1 +1,10 @@
+Schnitzeljagd is open source under LGPL 3.0 (or later).
+
+#pictures
+"Stanley compass 1". Licensed under CC BY-SA 3.0 via Wikimedia Commons - 
+https://commons.wikimedia.org/wiki/File:Stanley_compass_1.jpg#/media/File:Stanley_compass_1.jpg
+
+"Blue Marble 2012" - NASA/NOAA/GSFC/Suomi NPP/VIIRS/Norman Kuring
+https://www.flickr.com/photos/gsfc/6760135001
+Licensed under CC BY 2.0 https://creativecommons.org/licenses/by/2.0/
 

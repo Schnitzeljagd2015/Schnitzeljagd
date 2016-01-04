@@ -1,0 +1,25 @@
+Name: Kreuzkölln
+
+1.)
+Geo: 13.4301, 52.4888
+Frage: Was steht hier?
+Info: Kirchengemeinde
+Antwort: St. Christophorus
+
+2.)
+Geo: 13.4254, 52.4944
+Frage: An welcher Straße stehst du?
+Info: berühmte Automarke
+Antwort: Maybachufer
+
+3.) 
+Geo: 52.495149, 13.409406
+Frage: Welche Art von medizinischer Einrichtung steht hier?
+Info: Typ?
+Antwort: Krankenhaus
+
+4.) 
+Geo: 52.483647, 13.417062
+Frage: was befindet sich hier?
+Info: Du stehst vor dem Eingang
+Antwort: Kino
